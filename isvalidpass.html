@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Valid Password</title>
+    <script>
+        function isvalidpass() {
+            let password = document.getElementById("password").value
+            if (password.length >= 8 && /[A-Z]/.test(password) && /[a-z]/.test(password) && /[\W_]/.test(password) && /[0-9]/.test(password)) {
+                document.getElementById("ans").innerText = "Valid Password!"
+            }
+            else {
+                document.getElementById("ans").innerText = "Invalid password!"
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="password"></input>
+    <button onclick="isvalidpass()">Ok</button><br>
+    <label id="ans"></label>
+</body>
+</html>

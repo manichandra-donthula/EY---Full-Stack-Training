@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        li {
+            padding: 10px;
+        }
+    </style>
+    <script>
+        function add() {
+            let num1 = document.getElementById("num1").value
+            let num2 = document.getElementById("num2").value
+            document.getElementById("d").innerText = (Number(num1) + Number(num2))
+        }
+        function sub() {
+            let num1 = document.getElementById("num1").value
+            let num2 = document.getElementById("num2").value
+            document.getElementById("d").innerText = (Number(num1) - Number(num2))
+        }
+        function mul() {
+            let num1 = document.getElementById("num1").value
+            let num2 = document.getElementById("num2").value
+            document.getElementById("d").innerText = (Number(num1) * Number(num2))
+        }
+        function div() {
+            let num1 = document.getElementById("num1").value
+            let num2 = document.getElementById("num2").value
+            document.getElementById("d").innerText = (Number(num1) / Number(num2))
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <input type="number" id="num1"></input>
+    <input type="number" id="num2"></input><br>
+    
+    <ul style="display: flex; list-style-type: none;">
+        <li><button onclick="add()">Add</button></li>
+        <li><button onclick="sub()">Sub</button></li>
+        <li><button onclick="mul()">Mul</button></li>
+        <li><button onclick="div()">Div</button></li>
+    </ul>
+    <label for="result">Result:</label>
+    <label id="d"></label>
+</body>
+</html>

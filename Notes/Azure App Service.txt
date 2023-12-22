@@ -1,0 +1,18 @@
+Azure App Service
+steps to create web app using Azure app services
+
+open azure portal
+search for app services
+click on create 
+select web app
+select resource group
+plan type free
+region
+select github and signin
+organization=username
+repo=cloupractical
+branch=main
+build details:
+build presets= HTML
+app location= /src
+Next->Review+Create
